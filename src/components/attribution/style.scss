@@ -1,0 +1,35 @@
+@import "./utilities";
+
+
+.attribution{
+    @include flex_center();
+      font-size: 0.5rem;
+      padding: 1rem;
+      position: absolute;
+      bottom: 0;
+      color: $light_cyan;
+
+      @include xs{
+        font-size: 0.6rem;
+
+      }
+
+      @include xxl{
+        font-size: 0.8rem;
+
+      }
+      
+
+      a{
+          color: $neon_green;
+          filter: brightness(70%);
+          transition: all 0.3s linear;
+        
+     
+
+          &:hover, &:active{
+              filter: brightness(100%)
+          }
+      }
+    
+}

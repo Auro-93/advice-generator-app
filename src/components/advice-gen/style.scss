@@ -1,0 +1,118 @@
+@import "./utilities";
+
+.advice_container{
+    position: relative;
+    padding: 1.5rem 2.5rem;
+    background-color: $grayish_blue;
+    border-radius: 12px;
+    width: 100%;
+    min-height: 18rem;
+    @include flex-center();
+    flex-direction: column;
+
+    @include xxs{
+        width: 90%;
+    }
+
+    @include s{
+        width: 30rem;
+    }
+
+    @include xxl{
+        width: 60rem;
+        min-height: 30rem;
+        padding: 1.5rem 4rem;
+        
+
+    }
+  
+
+    &_text{
+        text-align: center;
+
+        &_id{
+         
+            color: $neon_green;
+            font-size: 0.6rem;
+            letter-spacing: 0.2rem;
+            margin-bottom: 1rem;
+
+            @include xxl{
+                font-size: 1rem;
+                margin-bottom: 3rem;
+            }
+        
+
+        }
+
+        &_sentence{
+            color: $light_cyan;
+            line-height: 2rem;
+            font-size: 1.4rem;
+            margin-bottom: 2rem;
+
+            @include xxl{
+                line-height: 3rem;
+                font-size: 1.8rem;
+                margin-bottom: 3rem;
+            }
+
+        }
+
+        &_error{
+            color: $red;
+            margin: 2rem 0;
+            font-size: 1.2rem;
+           
+        }
+    }
+
+    &_divider{
+        width: 100%;
+        margin-bottom: 2rem;
+
+        @include s{
+            width: auto;
+        }
+
+        @include md{
+            width: 90%;
+            margin-bottom: 1.2rem;
+
+        }
+       
+    }
+
+    &_generate-btn{
+        position: absolute;
+        bottom: -10%;
+        left: 50%;
+        transform: translate(-50%, -10%);
+
+        border-radius: 100%;
+        width: 3.5rem;
+        height: 3.5rem;
+        @include flex_center();
+        background-color: $neon_green;
+        transition: all 0.3s linear;
+
+        @include xxl{
+            width: 6rem;
+            height: 6rem;
+        }
+
+        &:hover, &:active{
+            box-shadow: 0 0 25px  $neon_green ;
+
+        }
+
+        img{
+            width: 40%;
+            height: 40%;
+        }
+
+
+    }
+
+
+}

@@ -1,0 +1,80 @@
+/*****COLORS*****/
+
+//Primary
+$light_cyan : hsl(193, 38%, 86%);
+$neon_green: hsl(150, 100%, 66%);
+
+//Neutral
+$grayish_blue : hsl(218, 20%, 24%);
+$dark_grayish_blue : hsl(220, 22%, 16%);
+
+//Error
+$red: hsl(0, 48%, 49%);
+
+
+/****TYPOGRAPHY****/
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+
+$font_family: 'Manrope', sans-serif;
+
+
+
+/*****MIXINS*****/
+
+@mixin typography() {
+    font-family: $font-family;
+    font-weight: 800;
+}
+
+@mixin flex_center() {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+//MEDIA QUERIES
+
+/*MEDIA QUERIES MIXINS*/
+
+@mixin xxs {
+    @media screen and (min-width: 300px) {
+      @content;
+    }
+  }
+  
+  @mixin xs {
+    @media screen and (min-width: 400px) {
+      @content;
+    }
+  }
+  
+
+  @mixin s {
+    @media screen and (min-width: 576px) {
+      @content;
+    }
+  }
+  
+  @mixin md {
+    @media screen and (min-width: 768px) {
+      @content;
+    }
+  }
+  
+  @mixin lg {
+    @media screen and (min-width: 1000px) {
+      @content;
+    }
+  }
+  
+  @mixin xl {
+    @media screen and (min-width: 1200px) {
+      @content;
+    }
+  }
+  @mixin xxl {
+    @media screen and (min-width: 1600px) {
+      @content;
+    }
+  }
