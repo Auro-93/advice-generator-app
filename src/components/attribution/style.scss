@@ -3,11 +3,13 @@
 
 .attribution{
     @include flex_center();
-      font-size: 0.5rem;
+      font-size: 0.4rem;
       padding: 1rem;
       position: absolute;
       bottom: 0;
       color: $light_cyan;
+    
+     
 
       @include xs{
         font-size: 0.6rem;
