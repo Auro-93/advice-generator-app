@@ -33,7 +33,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [https://www.frontendmentor.io/solutions/todo-app-using-reactjs-and-react-beautiful-dnd-library-JTOuJQmB9]
+- Solution URL: [https://www.frontendmentor.io/solutions/responsive-advice-generator-app-built-with-react-B1S9COnVq]
 - Live Site URL: [https://advice-generator-app-frontend-mentor.netlify.app/]
 
 ## My process
